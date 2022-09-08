@@ -1,3 +1,7 @@
+body{
+  margin:0;
+}
+
 #page{
     display:grid;
     grid-template-areas: "header" "main";
@@ -160,5 +164,129 @@ label{
     margin-top: 165px;
     height: 350px;
     width:600px;
-
 }
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: #787878;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:50px;
+    height:50px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #b5af41;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown2 {
+    position: relative;
+    display: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left:-110px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+
+@media only screen and (max-width:820px){
+    .dropdown2{
+       display: block;
+    }
+     .links{
+      display:none;
+     }
+     #header{
+       width:375px;
+       display:flex;
+       flex-direction: row;
+     }
+     .name{
+       margin-top:-5px;
+       margin-left:0px;
+     }
+     .dropbtn{
+        width:18px;
+        height:18px;
+        margin-left:-19px;
+        margin-top:9px;
+     }
+     .dropdown2 img ul li{
+       margin-left:500px;
+     }
+     .redessociais img{
+      margin-top:-23px;
+      margin-left:15px;
+    }
+    #linkedin{
+      margin-top:-218px;
+      margin-left:-40px;
+     }
+     .label span a img{
+       margin-top:-10px;  
+     }
+     main{
+       width:375px;
+       display:flex;
+       flex-direction: column;
+     }
+     .dropdown .label{
+        float:right;
+        margin-top:-120px;
+     }
+     .items{
+       margin-top:-120px;
+     }
+     .redessociais img{
+       margin-top:-1px;
+       margin-left:15px;
+     }
+     #imgrs{
+       margin-left:-50px;
+       margin-top:-30px;
+     }
+     .main{
+       display:flex;
+       flex-direction: column;
+       height:1000px;
+     }
+     .iconsby{
+       margin-top: 0px;
+       margin-left:0px;
+     }
+     .introduction{
+        width:375px;
+        margin-left:40px;
+     }
+     .photo{
+        margin-left:0px;
+        width:375px;
+        height: 270px;
+        margin-top:0px;
+     }
+    }
+   

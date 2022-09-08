@@ -206,9 +206,6 @@ label{
    display:none;
   }
   #header{
-   width:375px;
-  }
-  #header{
     width:375px;
     display:flex;
     flex-direction: row;
@@ -240,28 +237,32 @@ label{
     margin-top:-120px;
   }
   .redessociais img{
-    margin-top:-1px;
+    margin-top:-3px;
     margin-left:15px;
   }
+  #linkedin{
+    margin-top:-146px;
+    margin-left:-45px;
+   }
   #imgrs{
-    margin-top:-px;
     margin-left:-50px;
   }
   .myphoto{
-    margin-left:-25px;
-    margin-top:25px;
+    margin-left:0px;
+    margin-top:0px;
   }
   .main{
     display:flex;
     flex-direction: column;
-    height:1000px;
+    height:1200px;
   }
   .examplesbox{
     margin-left:50px;
     margin-top:15px;
   }
   .iconsby{
-    margin-top: 0px;
-    margin-left:0px;
+     margin-left:0px;
+     margin-top:0px; 
   }
+  
  }
