@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="author" content="Vitor Visconti">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/stylecadastro.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-utilities.min.css" rel="stylesheet" type="text/css">
+<page>
+
+  <head>
+    <div id="head">
+      <div class="logo">
+        <h1><span></span></h1>
+      </div>
+    </div>
+  </head>
+
+  <body>
+    <div class="form-cadastro">
+      <form method="post" action="#" id="form-cadastro">
+        <fieldset id="cadastro-usuario">
+          <legend>Cadastro de usuário</legend>
+          <div class="nome">
+            <label>Nome: <input class="field1" type="text" name="nome" id="nome"></label>
+          </div>
+          <p class="sexo">Sexo:
+          <div id="boxsexo"><div><input type="radio" name="genero" id="masculino" value="masculino"> <label
+              for="masculino">Masculino</label></div>
+            <div><input type="radio" name="genero" id="feminino" value="feminino"> <label for="feminino">Feminino</label></div>
+            <div><input type="radio" name="genero" id="naobinario" value="naobinario"> <label for="naobinario">Não-binário
+            </label></div>
+            <div><input type="radio" name="genero" id="naoespecificado" value="naoespecificado"><label
+              for="naoespecificado">&nbspPrefiro não especificar </label></p></div>
+            <div id="feedback-genero"></div>
+          </div>
+          <div class="usuario">
+            <label>Usuário: <input class="field1" type="text" name="usuario" id="usuario"></label>
+          </div>
+          <div class="telefone">
+            <label>Telefone: <input class="field1" type="text" name="telefone" id="telefone"></label>
+          </div>
+          <div class="curso">
+            <label>Curso: <input class="field1" type="text" name="curso" id="curso"></label>
+          </div>
+          
+          <div class="senha">
+            <div><label>Senha: <input class="field1" type="password" minlength="8" id="senha" name="senha"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Deve conter uma letra maiúscula, uma minúscula, um número e no mínimo 8 caracteres"
+                required></label></div>
+
+            <div id="caixamsg">
+             <p id="senhatxt"> &nbspA senha deve conter:</p>
+              <p id="maiuscula" class="invalid"> &nbspUma letra <b>maiúscula</b></p>
+              <p id="minuscula" class="invalid">&nbspUma letra <b>minúscula</b></p>
+              <p id="numero" class="invalid"> &nbspUm <b>número</b></p>
+              <p id="letras" class="invalid">&nbspOito <b>caracteres</b></p>
+            </div>
+
+          </div>
+          <div class="confirmacao-senha">
+            <label>Confirmação de senha: <input class="field1" type="password" minlength="8" name="confirmacao-senha"
+                id="confirmacao-senha"></label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Button trigger modal -->
+    <div class="buttontec">
+      <button id="button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModalLong">
+        Ler termos e condições
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Termos e condições</h5>
+          </div>
+          <div class="modal-body">
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <fieldset id="termosservico">
+      <legend>Termos do serviço</legend>
+      <label class="termosservico">Li e concordo com os termos do serviço <input id="termosservicobox"
+          type="checkbox"></label>
+    </fieldset>
+    <input id="enviarformulario" type="submit" value="Enviar formulário">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+  </body>
+
+</html>

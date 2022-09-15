@@ -310,23 +310,29 @@ label{
      .contactbox{
         width:375px;
         margin-left:40px;
+        margin-top:25px;
+     }
+     .yourmessage{
+        margin-top:-30px;
+        margin-left: -30px;
+        width:375px;
      }
      .container {
         margin-left:0px;
-        width:350px;
+        width:333px;
         margin-top:0px;
      }
      form label input{
-        width:350px;
+        width:330px;
      }
      #fname{
-        width:370px;
+        width:350px;
      }
      #lname{
-        width:370px;
+        width:350px;
      }
      #subject{
-        width:370px;
+        width:350px;
      }
      .photo{
         width:375px;

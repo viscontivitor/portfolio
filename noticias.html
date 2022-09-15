@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <meta content="author" name="Vitor Visconti">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Discover the world</title>
+    <link href="css/stylenoticias.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-utilities.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<div id="page">
+    <div id="header">
+        <div class="logo">
+            <h1><span></span></h1>
+        </div><p class="explore">Explore</p>
+        <div class="links">
+            <a class="link1" href="#" id="science" name="science">Science</a>
+            <a class="link1" href="#" id="travels" name="travels">Travels</a>
+            <a class="link1" href="#" id="animals" name="animals">Animals</a>
+            <a class="link1" href="#" id="history" name="history">History</a>
+            <a class="link1" href="#" id="enviroment" name="enviroment">Environment</a>
+        </div>
+
+            <div id="searchbox">
+                <input type="text" id="search" placeholder="Search...">
+                <a  id="search-btn" onclick="myfunction()"><img src="img/magnifyingglass.jpg" class="magnifying" alt="search"></a>
+            </div>
+       
+
+    
+    <div class="menubar">
+
+
+        <!-- Button trigger modal -->
+        <button class="buttonmenubar" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <img class="menubar" src="img/menubar.png">
+        </button>
+    </div>
+</div>
+<script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("header").style.height = "100px";
+      } else {
+        document.getElementById("header").style.height = "200px";
+      }
+    }
+    </script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box1">
+                            <a class="links2" href="#" id="explore" name="explore">Explore</a>
+                            <a class="links2" href="#" id="photooftheday" name="photooftheday">Photo of the day</a>
+                            <a class="links2" href="#" id="photography" name="photography">Photography</a>
+                            <a class="links2" href="#" id="video" name="video">Video</a>
+                            <a class="links2" href="#" id="subscribe" name="subscribe">Subscribe</a>
+                            <a class="links2" href="#" id="newsletter" name="newsletter">Sign the newsletter</a>
+                        </div>
+                        <div class="box2">
+                            <a class="links3" href="#" id="more" name="more">Explore the World</a>
+                            <a class="links3" href="#" id="subjects" name="subjects">Subjects, authors and
+                                fotographers</a>
+                            <a class="links3" href="#" id="explorers" name="explorers">Explorers</a>
+                            <a class="links3" href="#" id="tvschedule" name="tvschedule">Tv schedule</a>
+                            <a class="links4" href="#" id="terms" name="terms">Terms of use</a>
+                            <a class="links4" href="#" id="privacy" name="privacy">Privacy politics</a>
+                            <a class="links4" href="#" id="about" name="about">About Explore the World</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+<div id="main">
+    <div class="mostviewed">
+        <p class="p1">Most viewed</p><br><img src="img/valley.jpg"  class="img1"><br>
+        <div class="textmost1"><a href="#" class="categorymost">Nature</a><br><br><a href="#" class="linkmostmain">Old
+                painting depicts mountain area in the 19th century and shows the effects of modern times on forest
+                coverages.</a><br><br>
+            <p class="underline">___________________________________________________________</p>
+        </div>
+        <div class="position">
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="numbers">4</div>
+        </div>
+        <div class="textmost2"><a href="#" class="categorymost">Wild Life</a><br><br><a href="#" class="linkmost">The
+                most ferocious and deadly sharks you may encounter in your average beach.</a><br><br>
+            <p class="underline">___________________________________________________________</p>
+        </div>
+        <div class="textmost3"><a href="#" class="categorymost">Culture</a><br><br><a href="#" class="linkmost">Animals
+                you never considered notworthy that are worshiped in indigen cultures.</a><br><br>
+            <p class="underline">___________________________________________________________</p>
+        </div>
+        <div class="textmost4"><a href="#" class="categorymost">Climate change</a><br><br><a href="#"
+                class="linkmost">The climate changes can generate these five different effects on your daily
+                routine.</a><br><br>
+            <p class="underline">___________________________________________________________</p>
+        </div>
+    </div>
+    <div class="latestnews">
+        <p class="latestnewsp">Latest News</p>
+        <div class="latestnews1">
+            <img class="imgelephant" src="img/elephant.jpg" ><br><a class="latestnewscategory1"
+                href="#">Animals</a><br><br>
+            <a class="latestnewstext1" href="#">A new elephant specie that is surprising the researchers: its numbers
+                are growing really fast!</a>
+        </div>
+        <div class="latestnews2">
+            <img class="imgreforestation" src="img/reforestation.jpg" ><br><a class="latestnewscategory2" href="#">Nature</a><br><br>
+            <a class="latestnewstext2" href="#">There are new ways of reforestating environments that may surprise
+                you!</a>
+        </div>
+        <div class="latest34">
+            <div class="latestnews3">
+                <img class="imglatest" src="img/indigen.jpg" ><br><a class="latestnewscategory3" href="#">History</a><br><br>
+                <a class="latestnewstext3" href="#">This is the most ancient population of the<br>South America!</a>
+            </div>
+            <div class="latestnews4">
+                <img class="imglatest" src="img/forest.jpg" ><br><a class="latestnewscategory4" href="#">Nature</a><br><br>
+                <a class="latestnewstext4" href="#">A new type of forest grows in the midst of a desert region.</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photooftheday"><h1 class="imageoftheday"><span><a class="seemore" href="#" id="seemore">See more</a><p class="photoofthedaytext">Photo of the day</p></span></h1></div>
+<div id="animalstitle">
+    <h1>ANIMALS</h1>
+    <div id="animalimagescontainer">
+        <div><a href="#"><img id="elephant" src="img/elephant2.jpg"> <p class="textanimals">Elephant</p></a></div>
+        
+        <div><a href="#">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="img/lion.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="img/panther.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="img/tiger.jpg" style="width:100%">
+            </div>
+            
+            </div>
+            <p class="textanimals">Felines</p>
+        </a>
+        </div>
+            <div><a href="#"><img id="eagle"  src="img/eagle.jpg"> <p class="textanimals">Eagle</p></a></div>
+
+    </div>
+</div>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/noticias.js"></script>
+
+</html>
+
+<script>
+    $(window).scroll(function() {
+      $(".photoofthedaytext").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
+  </script>
